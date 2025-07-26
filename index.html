@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Advanced Number Guesser</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>🔢 Advanced Number Guesser</h1>
+        
+        <div class="difficulty-selector">
+            <h3>Select Difficulty:</h3>
+            <button id="easy-btn">Easy (1-50)</button>
+            <button id="medium-btn">Medium (1-100)</button>
+            <button id="hard-btn">Hard (1-200)</button>
+        </div>
+        
+        <div class="game-area">
+            <p id="range-display">Guess a number between 1 and 100</p>
+            <input type="number" id="guess-input" placeholder="Enter your guess">
+            <button id="submit-guess">Submit</button>
+            <button id="hint-btn">Get Hint</button>
+            <button id="new-game-btn">New Game</button>
+        </div>
+        
+        <div class="game-stats">
+            <p id="timer">Time: 0s</p>
+            <p id="score">Score: 100</p>
+            <p id="attempts">Attempts: 0</p>
+        </div>
+        
+        <div id="message" class="message"></div>
+        
+        <div class="guess-history">
+            <h3>📜 Guess History:</h3>
+            <ul id="guess-list"></ul>
+        </div>
+    </div>
+
+    <audio id="win-sound" src="sounds/win.mp3"></audio>
+    <audio id="lose-sound" src="sounds/lose.mp3"></audio>
+    <audio id="click-sound" src="sounds/click.mp3"></audio>
+
+    <script src="script.js"></script>
+</body>
+</html>
