@@ -1,7 +1,5 @@
 # Advanced Number Guessing Game
 
-![Game Screenshot](screenshot.png) <!-- Add a screenshot if available -->
-
 A web-based number guessing game with multiple difficulty levels, scoring system, hints, and timer.
 
 ## Features
